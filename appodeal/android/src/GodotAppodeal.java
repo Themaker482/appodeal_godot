@@ -88,11 +88,6 @@ public class GodotAppodeal extends Godot.SingletonBase {
                 } else if (type.equals("interstitial")) {
                     Appodeal.initialize(activity, appKey, Appodeal.INTERSTITIAL);
                     Appodeal.cache(activity, Appodeal.INTERSTITIAL);
-                } else if (type.equals("interstitial/video")) {
-                    Appodeal.confirm(Appodeal.SKIPPABLE_VIDEO);
-                    Appodeal.initialize(activity, appKey, Appodeal.INTERSTITIAL | Appodeal.SKIPPABLE_VIDEO);
-                    Appodeal.cache(activity, Appodeal.SKIPPABLE_VIDEO);
-                    Appodeal.cache(activity, Appodeal.INTERSTITIAL);
                 } else if (type.equals("interstitial/nonSkipVideo")) {
                     Appodeal.initialize(activity, appKey, Appodeal.INTERSTITIAL | Appodeal.NON_SKIPPABLE_VIDEO);
                     Appodeal.cache(activity, Appodeal.INTERSTITIAL);
